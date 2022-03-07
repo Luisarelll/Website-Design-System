@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.subcontent{
+    width: 1270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero{
+    width: 100%;
+    height: 960px;
+    background-image: url('/starting/assets/hero-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+} 
+
+.header{
+    width: 100%;
+    height: 80px;
+    padding: 20px 10px;
+}
+
+.subcontent-header{
+    max-width: 1270px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subcontent-header a:not(:last-child){
+    margin-right: 20px;
+}
+
+.subcontent-header h1{
+    background-color: #ff4a4a;
+    color: #f2f2f2;
+    padding: 0px 10px;
+    border-radius: 4px;
+}
+
+.content-nav{   
+    display: flex;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: #f36c6d;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #f36c6d;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover{
+    background-color: #f16d6b;
+    color: #ffffff;
+}
+
+.button:active{
+    background-color: #c25858;
+    border: 2px solid #c25858;
+    box-shadow: 0px 0px;
+}
+
+main{
+    width: 100%;
+}
+
+.content-colors{
+    width: 100%;
+    height: 515px;
+    display: flex;
+    justify-content: center;
+    background-image: url('/starting/assets/background-colors.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 0px 10px;;
+}
+
+.subcontent-colors-bottom{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.subcontent-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subcontent-bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-style{
+    text-align: center;
+    font-weight: 600;
+    color: #000000;
+    padding: 30px 100px;
+    border-radius: 10px;   
+}
+
+.yellow{
+    background-color: #f6bc47;
+}
+
+.purple{
+    background-color: #992dec;
+}
+
+.magneta-blue{
+    background-color: #4CAEC9;
+}
+
+.violet{
+    background-color: #CB2D78;
+}
+
+.gray{
+    background-color: #333333;
+}
+
+.content-fonts{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-image: url('/starting/assets/background-fonts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 10px;
+}
+
+.subcontent-fonts-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.content-fonts-style{
+    max-width: 450px;
+}
+
+.content-fonts-style h3{
+    text-decoration: underline;
+}
+
+.content-fonts-style p{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.content-fonts-style p:nth-child(3){
+    font-style: italic;
+}
+
+.content-fonts-style p:nth-child(4){
+    font-weight: bold;
+}
+
+.content-fonts-style :not(:first-child){
+    margin-top: 20px;
+}
+
+.content-text-style{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    background-image: url(/starting/assets/background-text-style.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 10px;
+
+}
+
+.content-text-style-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.list-style{
+    font-size: 18px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list-style li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom right, #cb5758, #f36e6e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width: 2560px){
+
+    .subcontent{
+        width: 1600px;
+    }
+
+    .hero{
+        background-position: 100% 50%;  
+    }
+
+    .subcontent-header{
+        max-width: 1600px;
+    }
+
+    .content-colors{
+        height: 600px;
+        background-position: center center;
+    }
+
+    .content-fonts{
+        height: 600px;
+        background-position: center center;
+    }
+
+    .content-text-style{
+        height: 600px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1680px){
+
+    .subcontent{
+        width: 1300px;
+    }
+
+    .hero{
+        height: 888px;
+        background-position: center bottom;
+    }
+
+    .subcontent-header{
+        max-width: 1300px;
+    }
+
+    .content-colors{
+       height: 500px;
+       background-position: center bottom;
+    }
+
+    .content-fonts{
+        height: 500px;
+    }
+
+    .content-text-style{
+        height: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 1440px){
+    
+    .subcontent{
+        width: 1200px;
+    }
+
+    .subcontent-header{
+        width: 1200px;
+    }
+
+    .content-colors{
+        height: 430px;
+    }
+
+    .content-fonts{
+        height: 430px;
+    }
+
+    .content-text-style{
+        height: 430px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .subcontent{
+        width: 950px;
+    }
+
+    .hero{
+        background-position: center center;
+    }
+
+    .subcontent-header{
+        max-width: 950px;
+    }
+
+    .content-colors{
+        height: 350px;
+        background-image: url(/starting/assets/background-colors-medium.png);
+        background-position: center top; 
+    }
+
+    .content-fonts{
+        height: 400px;
+    }
+
+    .content-text-style{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 920px){
+
+    .subcontent{
+        width: 720px;
+    }
+
+    .hero{
+        background-image: url(/starting/assets/hero-image-tablet.png);
+    }
+
+    .subcontent-header{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .subcontent-header{
+        max-width: 720px;
+    }
+
+    .subcontent-header h1{
+        text-align: center;
+        font-size: 35px;
+        padding: 0px 20px;
+    }
+
+    .content-nav{
+        display: none;
+    }
+
+    .button{
+        padding: 5px 10px;
+        box-shadow: 0px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-colors{
+        height: 330px;
+        background-image: url(/starting/assets/background-colors-tablet.png);
+        background-position: center bottom;
+    }
+
+    .subcontent-colors-bottom{
+        height: 160px;
+    }
+
+    .content-style{
+        padding: 10px 50px;
+    }
+
+    .content-fonts{
+        height: 330px;
+        background-image: url(/starting/assets/background-fonts-tablet.png);
+    }
+
+    .content-fonts-style{
+        max-width: 350px;
+    }
+
+    .content-fonts-style p{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .content-text-style{
+        height: 330px;
+        background-image: url(/starting/assets/background-text-style-tablet.png);
+    }
+
+    .content-title h1{
+        font-size: 22px;
+    }
+
+    .content-subtitles h2{
+        font-size: 18px;
+    }
+
+    .list-style{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 740px){
+
+    .subcontent{
+        width: 100%;
+    }
+
+    .hero{
+        height: 350px;
+    }
+
+    .subcontent-header h1{
+        font-size: 26px;
+    }
+
+    .content-nav{
+        display: none;
+    }
+
+    .content-colors{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .content-style{
+        padding: 10px 30px;
+    }
+
+    .content-fonts{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;   
+    }
+
+    .content-fonts-style{
+        padding: 5px;
+    }
+
+    .content-fonts-style p{
+        font-size: 12px;
+    }
+
+    .content-text-style{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .content-title h1{
+        font-size: 18px;
+    }
+
+    .content-subtitles h2{
+        font-size: 16px;
+    }
+
+    .content-paragraph p{
+        font-size: 14px;
+    }
+
+    .list-style{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 440px){
+
+    .hero{
+        height: 450px;
+        background-image: url(/starting/assets/hero-image-mobile.png);
+        background-position: center top;
+    }
+
+    .content-colors{
+        background-image: url(/starting/assets/background-colors-mobile.png);
+    }
+
+    .subcontent{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subcontent-colors-bottom{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    .subcontent-top{
+        flex-direction: column;
+    }
+
+    .subcontent-top :not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .subcontent-bottom{
+        flex-direction: column;
+    }
+
+    .subcontent-bottom :nth-child(1){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content-fonts{
+        background-image: url(/starting/assets/background-fonts-mobile.png);
+    }
+
+    .subcontent-fonts-bottom{
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .content-fonts-style{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .content-text-style{
+        background-image: url(/starting/assets/background-text-style-mobile.png);
+    }
+
+    .content-text-style-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .content-text-style-bottom :nth-child(2){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content-title h1{
+        font-size: 22px;
+    }
+
+    .content-subtitles h2{
+        font-size: 18px;
+    }
+
+    .list-style{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 380px){
+    .subcontent-header h1{
+        font-size: 22px;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .subcontent-header h1{
+        font-size: 20px;
+    }
+}
